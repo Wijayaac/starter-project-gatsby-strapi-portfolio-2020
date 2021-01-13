@@ -1,9 +1,9 @@
 import React from "react"
 
-const Title = title => {
+const Title = ({ title }) => {
   return (
     <div className="section-title">
-      <h2>{title || "Default Title"} </h2>
+      <h2>{title || "default title"} </h2>
       <div className="underline"></div>
     </div>
   )
