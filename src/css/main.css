@@ -596,6 +596,7 @@ Jobs
   margin-bottom: 1.25rem;
 }
 .job-desc p {
+  text-transform: capitalize;
   margin-bottom: 0;
   color: var(--clr-grey-3);
 }
