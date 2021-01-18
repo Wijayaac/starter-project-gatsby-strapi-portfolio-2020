@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
-// ...GatsbyImageSharpFluid
+import SEO from "../components/SEO"
 
 const ProjectsPage = ({
   data: {
@@ -11,6 +11,7 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
+      <SEO title="Projects " />
       <section className="projects-page">
         <Projects projects={projects} title="All Works" />
       </section>
@@ -33,7 +34,7 @@ export const query = graphql`
         image {
           childImageSharp {
             fluid {
-              src
+              ...GatsbyImageSharpFluid
             }
           }
         }
